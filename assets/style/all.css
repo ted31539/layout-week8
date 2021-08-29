@@ -22128,10 +22128,6 @@ img {
   color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.svg:hover {
-  fill: red;
-}
-
 .navbar-toggler {
   padding: 9.17px 5.5px;
 }
