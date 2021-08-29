@@ -22052,6 +22052,12 @@ img {
   display: block;
 }
 
+.banner {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .position-middle {
   position: absolute;
   top: 50%;
