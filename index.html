@@ -1,10 +1,60 @@
----
-title: DOYOGA，做你的瑜珈
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<!-- banner -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOYOGA，做你的瑜珈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light py-4 py-lg-5">
+      <div class="container justify-content-between position-relative">
+        <h1 class="w-75">
+          <a class="navbar-brand logo img-replace-text banner" href="#">DOYOGA</a>
+        </h1>
+        <div class="d-flex justify-content-end w-25">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-btn"><span></span>
+            </div>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse position-lg-middle" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">瑜珈空間</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">當月課表</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <ul class="btn-group d-flex" role="group" aria-label="Basic example">
+                <li><button class="btn btn-outline-primary border-sm text-primary btn-hover-text-white me-4">立即預約</button></li>
+                <li><button class="btn btn-outline-primary border-sm text-primary btn-hover-text-white">聯絡我們</button></li>
+              </ul>    
+            </li>
+          </ul>           
+        </div>
+        <div class="collapse navbar-collapse d-none" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <button class="btn btn-outline-primary border-sm text-primary text-nowrap btn-hover-text-white me-4">立即預約</button>
+            <button class="btn btn-outline-primary border-sm text-primary text-nowrap btn-hover-text-white">聯絡我們</button>
+          </ul>         
+        </div>
+      </div>
+    </header>
+
+    <!-- banner -->
 <div class="card text-dark border-0 rounded-0 z-index-0">
     <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg?raw=true" class="card-img object-position-bottom height-140" alt="yoga">
     <div class="card-img-overlay d-flex align-items-center p-0">
@@ -395,3 +445,85 @@ current: index
 
 
 
+
+
+    <footer class="footer bg-primary text-white position-relative pt-6 pb-7 z-index-0">
+      <div class="border-bottom pb-4 pb-md-8">
+        <div class="container">
+          <div class="row justify-content-lg-between">
+            <div class="col-12 col-lg-5 mb-2">
+              <h3 class="h3">現在訂閱，獲得課程優惠碼！</h3>  
+            </div>
+            <div class="col-12 col-md-6 col-lh-4">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                <div class="input-group-text text-white fs-5 border-start-0 btn-secondary" id="btnGroupAddon2">訂閱</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-4 pt-md-8">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-4">
+              <h4 class="mb-1">
+                <a class="navbar-brand logo-white img-replace-text banner" href="#">DOYOGA</a>
+              </h4>
+              <ul class="nav flex-column mb-1">
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-light " href="#">課程介紹</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-light" href="#">瑜珈空間</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fw-light" href="#">當月課表</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 order-3 col-md-4 order-md-2 d-md-flex align-items-end mb-md-1">
+              <p>© 2021. All Rights Reserved.</p>
+            </div>
+            <div class="col-4 order-2">
+              <ul class="nav justify-content-end">
+                <li class="nav-item fs-5">
+                  <a class="nav-link active p-0 pe-1" aria-current="page" href="#"><i class="bi bi-facebook text-white icon-hover"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 py-0 px-1" href="#"><i class="bi bi-instagram text-white icon-hover"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pt-1 ps-1 icon-hover" href="#">                    
+                    <img class="width-6 hover-text-dark icon-hover" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8a71940d3cd9c932e7126e75e093f68f3a861b79/week3/icon-line.svg" alt="icon-line">
+                  </a>
+                </li>              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </footer>
+
+<!-- memu -->
+    <ul class="nav flex-column position-fixed top-50 end-0 float-end d-none d-lg-block me-3">
+      <li class="nav-item fs-5">
+        <a class="nav-link active p-0" aria-current="page" href="#"><i class="bi bi-facebook text-primary icon-hover"></i></a>
+      </li>
+      <li class="nav-item fs-5">
+        <a class="nav-link p-0" href="#"><i class="bi bi-instagram text-primary icon-hover"></i></a>
+      </li>
+      <li class="nav-item mt-2">
+        <a class="nav-link icon-hover p-0" href="#">                    
+          <img class="width-5 bg-primary icon-hover p-0" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8a71940d3cd9c932e7126e75e093f68f3a861b79/week3/icon-line.svg" alt="icon-line">
+        </a>
+      </li>              
+    </ul>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>    
+  </body>
+</html>
