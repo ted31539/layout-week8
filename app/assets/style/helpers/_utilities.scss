@@ -1,0 +1,141 @@
+//fint-size
+@for $i from 1 through 8 {
+    .font-size-#{$i} {
+        font-size: ($i *0.25rem) !important;
+    }
+}
+//width
+@for $i from 1 through 41 {
+    .width-#{$i} {
+      width: $i * 0.25rem !important;
+    }
+  }
+@for $i from 1 through 42 {
+    .width-md-#{$i} {
+        @include media-breakpoint-up(md) { 
+            width: $i * 0.25rem !important;
+         }      
+    }
+}
+@for $i from 1 through 111 {
+    .width-lg-#{$i} {
+        @include media-breakpoint-up(lg) { 
+            width: $i * 0.25rem !important;
+         }      
+    }
+}
+//height
+@for $i from 1 through 155 {
+    .height-#{$i} {
+        height: $i * 0.25rem !important;
+    }
+  }
+@for $i from 1 through 111 {
+    .height-md-#{$i} {
+        @include media-breakpoint-up(md) { 
+            height: $i * 0.25rem !important; 
+        }      
+    }
+}
+@for $i from 1 through 111 {
+    .height-lg-#{$i} {
+        @include media-breakpoint-up(lg) { 
+            height: $i * 0.25rem !important; 
+        }      
+    }
+}
+//title
+.title {
+    font-size: 28px;
+    color: $primary;
+}
+.subtitle {
+    font-size: 20px;
+    color: $secondary;
+}
+//border
+.border-sm {
+    border: 0.5px solid;
+}
+//border-radius
+.rounded-4 {
+    border-radius: 1rem;
+}
+.rounded-top-4 {
+    border-radius: 1rem 1rem 0 0;
+}
+.rounded-left-md-4 {
+    @include media-breakpoint-up(md) { 
+        border-radius: 1rem 0 0 1rem;
+     }      
+}
+.rounded-top-lg-4 {
+    @include media-breakpoint-up(lg) { 
+        border-radius: 1rem 1rem 0 0;
+     } 
+}
+//圖片取代文字
+.img-replace-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    
+}
+//position
+.position-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.position-lg-middle {
+    @include media-breakpoint-up(lg) { 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+}
+.object-position-bottom {
+    object-position: center bottom;    
+}
+//transform
+.transform-scale-x {
+    transform:scaleX(1.176);
+}
+
+//banner
+.banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 0;
+}
+//logo
+.logo {
+    width: 96px;
+    height: 31px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA-logo.png?raw=true');
+}
+//logo white
+.logo-white {
+    width: 96px;
+    height: 31px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/DOYOGA.png?raw=true');
+}
+
+//icon 
+.icon-hover {
+    &:hover {
+        filter: brightness(0);        
+    }
+}
+.bi {
+    width: 24px;
+    height: 24px;
+}
+
+.z-index-0 {
+    z-index: 0;
+}

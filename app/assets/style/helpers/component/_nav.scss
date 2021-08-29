@@ -1,0 +1,30 @@
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+    font-size: 0.5rem;
+}
+.nav-link {
+    padding: 4px;
+    &:hover {
+        color: rgba(0,0,0,0.7) !important;
+    }
+}
+.hover-text-dark {
+    &:hover {
+        color: rgba(0,0,0,0.7) !important;
+    }
+}
+.svg {
+    &:hover{
+        fill: red;
+    }    
+}
+.navbar-toggler {
+    padding: 9.17px 5.5px;
+}
+@include media-breakpoint-up(md) { 
+    .navbar-collapse {    
+    flex-basis: auto;
+    flex-grow: 0;
+    } 
+}
